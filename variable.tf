@@ -52,3 +52,5 @@ variable "personal_info" {
 }
 
 variable "passkey" {}
+
+variable "user" {}
