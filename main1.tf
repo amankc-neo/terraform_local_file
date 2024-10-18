@@ -18,3 +18,13 @@ resource "local_file" "myfile3" {
     content = var.mapping["c2"]
 
 }
+
+resource "local_file" "listfiles" {
+    filename = var.listoffiles[0]
+    content = var.listoffilescontent[0]
+}
+
+resource "local_file" "listfiles1" {
+    filename = var.listoffiles[1]
+    content = var.listoffilescontent[1]
+}

@@ -17,3 +17,15 @@ variable "mapping" {
    }
 
 }
+
+variable "listoffiles" {
+    type = list
+    default = ["/home/ubuntu/terraform_local/fifthfile.txt","/home/ubuntu/terraform_local/sixth.txt"]
+
+}
+
+variable "listoffilescontent" {
+    type = list
+    default = ["this content is at 0th index","this content is at 1st index"]
+
+}
