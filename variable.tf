@@ -29,3 +29,24 @@ variable "listoffilescontent" {
     default = ["this content is at 0th index","this content is at 1st index"]
 
 }
+
+variable "personal_info" {
+    type = object({
+	name = string
+	education = list(string)
+	aadhar = number
+	age = number
+	height = number 
+})
+    
+    default = {
+	name = "Aman Choudhary"
+	education = ["StPaul","PMS","KIIT"]
+	aadhar = 277071873160
+	age = 23
+	height = 6.1
+}
+
+
+
+}

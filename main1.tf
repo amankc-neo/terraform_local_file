@@ -28,3 +28,23 @@ resource "local_file" "listfiles1" {
     filename = var.listoffiles[1]
     content = var.listoffilescontent[1]
 }
+
+output "my_name" {
+    value = var.personal_info.name
+}
+
+output "my_age" {
+    value = var.personal_info.age
+}
+ 
+output "my_aadhar" {
+    value = var.personal_info.aadhar
+}
+
+output "my_education" {
+    value = var.personal_info.education
+}
+
+output "my_height" {
+    value = var.personal_info.height
+}
