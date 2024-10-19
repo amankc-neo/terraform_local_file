@@ -48,3 +48,11 @@ output "my_education" {
 output "my_height" {
     value = var.personal_info.height
 }
+
+output "credential_passkey" {
+    value = var.passkey
+}
+
+output "credentials_user" {
+    value = var.user
+}
